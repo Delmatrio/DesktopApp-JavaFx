@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="548.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ProjetEvC">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="1013.0" layoutX="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/BG4.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="10.0" layoutY="16.0" prefHeight="538.0" prefWidth="968.0" style="-fx-background-color: #ffefcf;">
+         <children>
+            <JFXButton fx:id="goadd" layoutX="436.0" layoutY="18.0" onAction="#goAjoutProj" prefHeight="74.0" prefWidth="123.0" style="-fx-background-color: #00Cf00;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="del" layoutX="615.0" layoutY="18.0" onAction="#delSelC" prefHeight="74.0" prefWidth="123.0" style="-fx-background-color: #ffa000;" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Backhome" layoutX="811.0" layoutY="18.0" onAction="#goMenuadmin" prefHeight="74.0" prefWidth="123.0" style="-fx-background-color: #c20a0a;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <Text fill="#c92727" layoutX="44.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les Projets éventuels :" underline="true" wrappingWidth="327.9830722808838">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+            <TableView fx:id="Table" editable="true" layoutX="15.0" layoutY="105.0" prefHeight="423.0" prefWidth="939.0" style="-fx-background-color: #9f9f9f;">
+              <columns>
+                <TableColumn fx:id="DA" prefWidth="78.0" text="Date d'ajout" />
+                <TableColumn fx:id="ger" prefWidth="71.0" text="Gerant" />
+                  <TableColumn fx:id="ent" prefWidth="79.0" text="Entreprise" />
+                  <TableColumn fx:id="t1" prefWidth="72.0" text="Tel 1" />
+                  <TableColumn fx:id="m1" prefWidth="82.0" text="Mail 1" />
+                  <TableColumn fx:id="adrs" prefWidth="97.0" text="Adresse" />
+                  <TableColumn fx:id="d" prefWidth="160.0" text="Description" />
+                  <TableColumn fx:id="etat" minWidth="0.0" prefWidth="71.0" text="etat" />
+                  <TableColumn fx:id="sr" prefWidth="73.0" text="Source" />
+                  <TableColumn fx:id="LW" prefWidth="106.0" text="LinkWeb" />
+                  <TableColumn fx:id="ide" prefWidth="49.0" text="ID" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

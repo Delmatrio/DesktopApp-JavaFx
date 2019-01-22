@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="858.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignupC">
+   <children>
+      <Accordion layoutX="-16.0" layoutY="14.0" prefHeight="0.0" prefWidth="495.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Accordion>
+      <ImageView fitHeight="573.0" fitWidth="986.0" layoutX="-75.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Bg1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="232.0" layoutY="55.0" prefHeight="433.0" prefWidth="472.0" style="-fx-background-color: #008080;">
+         <children>
+            <Label layoutX="55.0" layoutY="14.0" prefHeight="44.0" prefWidth="363.0" style="-fx-font-style: italic;" text="Creation d'un nouveau compte User" textFill="#ff7b00">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+            <JFXTextField fx:id="nomuser" focusColor="#5fff9f" layoutX="100.0" layoutY="88.0" prefHeight="31.0" prefWidth="263.0" promptText="Enter nom d'utilisateur" unFocusColor="TEAL">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="mpass1" focusColor="#5fff9f" layoutX="100.0" layoutY="133.0" prefHeight="31.0" prefWidth="263.0" promptText="Entrer mot de passe" unFocusColor="TEAL">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="mpass2" focusColor="#5fff9f" layoutX="100.0" layoutY="178.0" prefHeight="31.0" prefWidth="263.0" promptText="mot de passe de nouveau" unFocusColor="TEAL">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="nomad" focusColor="#5fff9f" layoutX="100.0" layoutY="229.0" prefHeight="25.0" prefWidth="263.0" promptText="Nom d'utilisateur admin" unFocusColor="TEAL">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="mpassad" focusColor="#5fff9f" layoutX="100.0" layoutY="275.0" prefHeight="31.0" prefWidth="263.0" promptText="Mot de passe admin" unFocusColor="TEAL">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="Creer" layoutX="28.0" layoutY="356.0" onAction="#onCreer" prefHeight="44.0" prefWidth="250.0" style="-fx-background-color: ff7b00;" text="Créer" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="retour" layoutX="330.0" layoutY="356.0" onAction="#backhome" prefHeight="44.0" prefWidth="128.0" style="-fx-background-color: #c20a0a;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="res" layoutX="58.0" layoutY="58.0" prefHeight="21.0" prefWidth="375.0" textFill="#e1e412">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+   
+</AnchorPane>

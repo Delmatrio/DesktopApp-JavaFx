@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="540.0" prefWidth="877.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainControl">
+   <children>
+      <Accordion layoutX="-16.0" layoutY="14.0" prefHeight="0.0" prefWidth="495.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Accordion>
+      <ImageView fitHeight="566.0" fitWidth="970.0" layoutX="-8.0" layoutY="-2.0" opacity="0.31" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/BGR.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="479.0" layoutY="54.0" prefHeight="436.0" prefWidth="412.0" style="-fx-background-color: #9C2B27;">
+         <children>
+            <JFXTextField fx:id="usertxt" focusColor="#5fff9f" layoutX="56.0" layoutY="145.0" prefHeight="25.0" prefWidth="293.0" promptText="Nom d'utilisateur" unFocusColor="#bfc7c1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="userpass" focusColor="#5fff9f" layoutX="55.0" layoutY="218.0" prefHeight="25.0" prefWidth="303.0" promptText="Mot de Passe" unFocusColor="#bfc7c1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="Sin" layoutX="55.0" layoutY="305.0" onAction="#loginAction" prefHeight="44.0" prefWidth="303.0" style="-fx-background-color: #808080;" text="Se Connecter" textFill="#a12121">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXButton>
+            <Label layoutX="150.0" layoutY="49.0" prefHeight="32.0" prefWidth="104.0" text="S'identifier" textFill="#d3cece">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="41.0" layoutY="53.0" prefHeight="83.0" prefWidth="381.0" text="Application AraniaCom" textFill="#bfbdbd">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Sup" layoutX="80.0" layoutY="424.0" onAction="#signUp" prefHeight="44.0" prefWidth="303.0" style="-fx-background-color: #808080;" text="Créer un compte" textFill="#a12121">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#9a9494" layoutX="293.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sté AraniaCom SARL | BLOC I1 - 2ème Etage - A3 -  B231 | Pôle Technologique Elgazala, Ariana- Tunisie | +216 71 856 454" />
+      <ImageView fitHeight="279.0" fitWidth="388.0" layoutX="38.0" layoutY="135.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="close" layoutX="935.0" layoutY="-5.0" onAction="#close" prefHeight="31.0" prefWidth="33.0" style="-fx-background-color: #808080;" text="X" textFill="#9c2b27e3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+   
+</AnchorPane>

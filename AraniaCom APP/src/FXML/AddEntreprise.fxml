@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="548.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EntrepriseAddC">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="1013.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/BG4.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="94.0" layoutY="30.0" prefHeight="496.0" prefWidth="825.0" style="-fx-background-color: #ffefcf;">
+         <children>
+            <JFXTextField fx:id="NomEn" layoutX="169.0" layoutY="80.0" prefHeight="25.0" prefWidth="182.0" />
+            <JFXTextField fx:id="Categ" layoutX="169.0" layoutY="136.0" prefHeight="25.0" prefWidth="182.0" />
+            <JFXTextField fx:id="Addr" layoutX="169.0" layoutY="184.0" prefHeight="25.0" prefWidth="182.0" />
+            <JFXTextField fx:id="Te1" layoutX="169.0" layoutY="244.0" prefHeight="25.0" prefWidth="182.0" />
+            <JFXTextField fx:id="Te2" layoutX="169.0" layoutY="299.0" prefHeight="25.0" prefWidth="182.0" />
+            <JFXTextField fx:id="Ma1" layoutX="169.0" layoutY="357.0" prefHeight="25.0" prefWidth="182.0" promptText="Exemple@mail.com" />
+            <JFXTextField fx:id="Ma2" layoutX="595.0" layoutY="80.0" prefHeight="25.0" prefWidth="182.0" promptText="Exemple@mail.com" />
+            <JFXTextArea fx:id="DDE" layoutX="457.0" layoutY="172.0" prefHeight="115.0" prefWidth="337.0" promptText="(Description détaillée)" />
+            <JFXButton fx:id="ADDE" layoutX="457.0" layoutY="418.0" onAction="#AjoutEn" prefHeight="61.0" prefWidth="147.0" style="-fx-background-color: #00Cf00;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BACK" layoutX="651.0" layoutY="418.0" onAction="#goBack" prefHeight="61.0" prefWidth="147.0" style="-fx-background-color: #c20a0a;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="49.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Entreprise :" />
+            <Text layoutX="64.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catégorie :" />
+            <Text layoutX="62.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse :" />
+            <Text layoutX="51.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone 1:" />
+            <Text layoutX="50.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone 2 :" />
+            <Text layoutX="59.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail 1:" />
+            <Text layoutX="492.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail 2 :" />
+            <Text layoutX="457.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A propos :" />
+            <Text fontSmoothingType="LCD" layoutX="30.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajout d'un nouveau entreprise :" underline="true">
+               <font>
+                  <Font name="Arial Narrow Bold" size="26.0" />
+               </font>
+            </Text>
+            <Label fx:id="affiche" layoutX="37.0" layoutY="50.0" prefHeight="30.0" prefWidth="420.0" textFill="#ff2f00">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

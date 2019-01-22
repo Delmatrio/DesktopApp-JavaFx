@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="548.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AffEntrepriseC">
+   <children>
+      <ImageView fitHeight="654.0" fitWidth="1036.0" layoutX="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../FXML/images/BG4.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="19.0" layoutY="18.0" prefHeight="538.0" prefWidth="954.0" style="-fx-background-color: #ffefcf;">
+         <children>
+            <JFXButton fx:id="Backhome" layoutX="817.0" layoutY="424.0" onAction="#goMenu" prefHeight="74.0" prefWidth="123.0" style="-fx-background-color: #c20a0a;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </JFXButton>
+            <Text fill="#c92727" layoutX="37.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les Entreprises :" underline="true" wrappingWidth="218.9830722808838">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+            <TableView fx:id="Table" editable="true" layoutX="37.0" layoutY="67.0" prefHeight="441.0" prefWidth="754.0" style="-fx-background-color: #9f9f9f;">
+              <columns>
+                <TableColumn fx:id="nomE" prefWidth="108.0" text="Nom Entreprise" />
+                <TableColumn fx:id="CatE" prefWidth="95.0" text="Catégorie" />
+                  <TableColumn fx:id="AdE" prefWidth="111.0" text="Adresse" />
+                  <TableColumn fx:id="Tel1E" minWidth="0.0" prefWidth="110.0" text="Telephone 1" />
+                  <TableColumn fx:id="Mail1E" prefWidth="150.0" text="Email 1 " />
+                  <TableColumn fx:id="DescE" prefWidth="179.0" text="Description" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

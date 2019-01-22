@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="548.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ProjetEvAddC">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="1013.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/BG4.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="94.0" layoutY="37.0" prefHeight="496.0" prefWidth="825.0" style="-fx-background-color: #ffefcf;">
+         <children>
+            <JFXDatePicker fx:id="di" layoutX="136.0" layoutY="89.0" />
+            <JFXTextField fx:id="g" layoutX="126.0" layoutY="142.0" prefHeight="25.0" prefWidth="147.0" />
+            <JFXTextField fx:id="e" layoutX="126.0" layoutY="200.0" prefHeight="25.0" prefWidth="147.0" />
+            <JFXTextField fx:id="t1" layoutX="126.0" layoutY="257.0" prefHeight="25.0" prefWidth="147.0" />
+            <JFXTextField fx:id="t2" layoutX="126.0" layoutY="308.0" prefHeight="25.0" prefWidth="147.0" />
+            <JFXTextField fx:id="m1" layoutX="142.0" layoutY="367.0" prefHeight="25.0" prefWidth="147.0" promptText="Exemple@mail.com" />
+            <JFXTextField fx:id="m2" layoutX="142.0" layoutY="436.0" prefHeight="25.0" prefWidth="147.0" promptText="Exemple@mail.com" />
+            <JFXTextField fx:id="id" layoutX="571.0" layoutY="71.0" prefHeight="25.0" prefWidth="103.0" />
+            <JFXTextField fx:id="adr" layoutX="563.0" layoutY="129.0" prefHeight="25.0" prefWidth="162.0" />
+            <JFXTextArea fx:id="dd" layoutX="517.0" layoutY="179.0" prefHeight="92.0" prefWidth="290.0" promptText="écrire ici ..." />
+            <JFXComboBox fx:id="etat" layoutX="541.0" layoutY="299.0" prefHeight="25.0" prefWidth="127.0" />
+            <JFXComboBox fx:id="sr" layoutX="537.0" layoutY="347.0" prefHeight="25.0" prefWidth="127.0" />
+            <JFXTextField fx:id="sw" layoutX="507.0" layoutY="380.0" prefHeight="25.0" prefWidth="275.0" />
+            <JFXButton fx:id="addPE" layoutX="464.0" layoutY="426.0" onAction="#AjoutPE" prefHeight="61.0" prefWidth="147.0" style="-fx-background-color: #00Cf00;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="back" layoutX="652.0" layoutY="426.0" onAction="#goBack" prefHeight="61.0" prefWidth="147.0" style="-fx-background-color: #c20a0a;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="35.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date insertion :" />
+            <Text layoutX="44.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérant :" />
+            <Text layoutX="427.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Site web :" />
+            <Text layoutX="35.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entreprise :" />
+            <Text layoutX="33.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel. 1 :" />
+            <Text layoutX="29.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel. 2 :" wrappingWidth="41.531257688999176" />
+            <Text layoutX="28.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email 1 :" />
+            <Text layoutX="26.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email 2 :" />
+            <Text layoutX="381.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description détaillée :" />
+            <Text layoutX="433.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse :" />
+            <Text layoutX="442.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="état : " />
+            <Text layoutX="429.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Source : " />
+            <Text fontSmoothingType="LCD" layoutX="46.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajout d'un projet éventuel :" underline="true" wrappingWidth="339.7109375">
+               <font>
+                  <Font name="Arial Narrow Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="452.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id :" wrappingWidth="22.13671875" />
+            <Label fx:id="affiche" layoutX="394.0" layoutY="15.0" prefHeight="30.0" prefWidth="387.0" textFill="#da0909" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

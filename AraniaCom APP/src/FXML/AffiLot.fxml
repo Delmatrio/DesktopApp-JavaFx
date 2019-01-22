@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="548.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LotC">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="1013.0" layoutX="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/BG4.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="19.0" layoutY="16.0" prefHeight="538.0" prefWidth="954.0" style="-fx-background-color: #ffefcf;">
+         <children>
+            <JFXButton fx:id="goadd" layoutX="817.0" layoutY="104.0" onAction="#goAjoutLot" prefHeight="74.0" prefWidth="123.0" style="-fx-background-color: #00Cf00;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="del" layoutX="817.0" layoutY="257.0" onAction="#delSelC" prefHeight="74.0" prefWidth="123.0" style="-fx-background-color: #ffa000;" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Backhome" layoutX="817.0" layoutY="424.0" onAction="#goMenuadmin" prefHeight="74.0" prefWidth="123.0" style="-fx-background-color: #c20a0a;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <Text fill="#c92727" layoutX="49.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les Lots :" underline="true" wrappingWidth="183.9830722808838">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+            <TableView fx:id="Table" editable="true" layoutX="17.0" layoutY="67.0" prefHeight="441.0" prefWidth="795.0" style="-fx-background-color: #9f9f9f;">
+              <columns>
+                <TableColumn fx:id="noml" onEditCommit="#changeNom" prefWidth="70.0" text="Nom Lot" />
+                <TableColumn fx:id="typel" prefWidth="91.0" text="Type" />
+                  <TableColumn fx:id="dal" onEditCommit="#Changedateinsertion" prefWidth="88.0" text="Date d'ajout" />
+                  <TableColumn fx:id="descl" minWidth="0.0" prefWidth="97.0" text="Description" />
+                  <TableColumn fx:id="ddl" onEditCommit="#changeDatedeb" prefWidth="99.0" text="Date début" />
+                  <TableColumn fx:id="duresl" onEditCommit="#changeDurEst" prefWidth="86.0" text="Durée Estimée" />
+                  <TableColumn fx:id="prix" onEditCommit="#changePrix" prefWidth="73.0" text="Prix" />
+                  <TableColumn fx:id="dfl" onEditCommit="#changeDfin" prefWidth="98.0" text="Date Fin" />
+                  <TableColumn fx:id="dpl" onEditCommit="#changeDPay" prefWidth="92.0" text="Date payement" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
